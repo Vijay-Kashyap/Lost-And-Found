@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Lost">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:background="#6F7C88D3"
+        android:clipToPadding="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:title="      Lost Page"
+        app:titleMargin="4dp"
+        app:titleTextColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/lostitem_et"
+        android:layout_width="303dp"
+        android:layout_height="56dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Lost Item"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/insert_btn"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/adamina"
+        android:text="Insert Image"
+        android:textColor="#F7F9FA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691"
+        tools:ignore="HardcodedText" />
+
+    <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="133dp"
+                android:layout_height="63dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/adamina"
+                android:text="Submit"
+                android:textColor="#FBFBFB"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.92"
+                tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/des_et"
+        android:layout_width="303dp"
+        android:layout_height="103dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description of lost item"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/owner_et"
+        android:layout_width="303dp"
+        android:layout_height="103dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Owner Name and Contact"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="169dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="143dp"
+            android:layout_height="143dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
